@@ -1,0 +1,16 @@
+---
+- name: sample1
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: sample_task1
+      debug:
+        msg: "sample 1 task 1"
+
+- name: sample2
+  hosts: ubuntu_servers
+  gather_facts: no
+  tasks:
+    - name: sample_task2
+      debug:
+        msg: "sample 2 task 2"
